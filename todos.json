@@ -3,6 +3,77 @@
     "id": 1,
     "task": "Make Money",
     "completed": true,
-    "created_at": "2026-03-08T13:00:13.566031300Z"
+    "created_at": "2026-03-08T13:00:13.566031300Z",
+    "due_date": null
+  },
+  {
+    "id": 2,
+    "task": "Travel to Bali",
+    "completed": false,
+    "created_at": "2026-03-08T13:23:45.779992800Z",
+    "due_date": null
+  },
+  {
+    "id": 3,
+    "task": "Travel to Monaco",
+    "completed": true,
+    "created_at": "2026-03-08T13:38:00.724670400Z",
+    "due_date": null
+  },
+  {
+    "id": 4,
+    "task": "Travel to Turks",
+    "completed": false,
+    "created_at": "2026-03-08T13:53:29.939342900Z",
+    "due_date": null
+  },
+  {
+    "id": 5,
+    "task": "Travel to Mykonos",
+    "completed": false,
+    "created_at": "2026-03-08T14:21:23.295174800Z",
+    "due_date": "2026-03-08T14:21:26.295188100Z"
+  },
+  {
+    "id": 6,
+    "task": "Clear cart",
+    "completed": false,
+    "created_at": "2026-03-08T14:23:08.995959100Z",
+    "due_date": "2026-03-13T14:23:08.995968200Z"
+  },
+  {
+    "id": 7,
+    "task": "Feed the Dog",
+    "completed": false,
+    "created_at": "2026-03-08T14:25:26.042309200Z",
+    "due_date": "2026-03-18T14:25:26.042319500Z"
+  },
+  {
+    "id": 8,
+    "task": "Feed the cat",
+    "completed": false,
+    "created_at": "2026-03-08T14:26:25.625475600Z",
+    "due_date": null
+  },
+  {
+    "id": 9,
+    "task": "Go to concert",
+    "completed": false,
+    "created_at": "2026-03-08T14:27:37.876901100Z",
+    "due_date": null
+  },
+  {
+    "id": 10,
+    "task": "Go to professor",
+    "completed": false,
+    "created_at": "2026-03-08T14:27:53.776954300Z",
+    "due_date": "2026-03-20T14:27:53.776955500Z"
+  },
+  {
+    "id": 11,
+    "task": "Go to babe",
+    "completed": false,
+    "created_at": "2026-03-08T14:30:26.042091600Z",
+    "due_date": "2026-03-10T14:30:26.042092900Z"
   }
 ]

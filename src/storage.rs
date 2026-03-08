@@ -35,9 +35,9 @@ impl Storage {
         Ok(())
     }
 
-    pub fn add(&mut self, task: String) {
+    pub fn add(&mut self, task: String, due_in: u32) {
         let id = self.todos.len() + 1;
-        let new_todo = Todo::new(id, task);
+        let new_todo = Todo::new(id, task, due_in);
 
         self.todos.push(new_todo);
     }

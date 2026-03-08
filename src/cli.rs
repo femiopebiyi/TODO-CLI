@@ -14,6 +14,7 @@ pub enum Commands {
     Add {
         /// The task description
         task: String,
+        due: Option<u32>,
     },
 
     /// List all tasks
@@ -33,4 +34,10 @@ pub enum Commands {
 
     /// Clear all completed tasks
     Clear,
+
+    /// Search for tasks containing a keyword
+    Search { keyword: String },
+
+    /// Display statistics about tasks
+    Stats,
 }
