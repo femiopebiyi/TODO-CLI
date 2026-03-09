@@ -60,3 +60,23 @@ impl Todo {
         }
     }
 }
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn test_new_todo() {
+        let todo = Todo::new(1, "Test task".into(), 5);
+        assert_eq!(todo.id, 1);
+        assert_eq!(todo.task, "Test task");
+        assert!(!todo.completed);
+    }
+
+    #[test]
+    fn test_mark_completed() {
+        let mut todo = Todo::new(1, "Test task".into(), 5);
+        todo.mark_completed();
+        assert!(todo.is_completed());
+    }
+}

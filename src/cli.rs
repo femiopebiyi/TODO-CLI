@@ -40,4 +40,12 @@ pub enum Commands {
 
     /// Display statistics about tasks
     Stats,
+
+    /// Edit a task's description
+    Edit {
+        /// The task ID to edit
+        id: usize,
+        /// The new task description
+        new_task: String,
+    },
 }

@@ -146,6 +146,18 @@ fn main() {
                 }
             );
         }
+        Commands::Edit { id, new_task } => {
+            match storage.edit(new_task.clone(), id) {
+                Ok(_) => (),
+                Err(error) => {
+                    println!("{}", error);
+                    process::exit(1);
+                }
+            }
+
+            save_or_exit(&storage);
+            println!("✏️  Updated task #{} to '{}'", id, new_task);
+        }
     }
 
     // TODO: Handle any errors that occurred

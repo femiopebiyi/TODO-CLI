@@ -76,4 +76,17 @@ impl Storage {
         self.todos.retain(|t| !t.is_completed());
         before_length - self.todos.len()
     }
+
+    pub fn edit(&mut self, new_task: String, id: usize) -> Result<(), String> {
+        if let Some(todo) = self
+            .todos
+            .iter_mut()
+            .find(|t| t.id == id && !t.is_completed())
+        {
+            todo.task = new_task;
+            Ok(())
+        } else {
+            Err(format!("Todo with id {} not found", id))
+        }
+    }
 }
